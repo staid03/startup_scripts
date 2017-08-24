@@ -1,5 +1,8 @@
-﻿;Best viewed in Notepad++ with the AHK syntax file installed.
-;This file runs through AutoHotkey a highly versatile freeware scripting program.
+;Best viewed in Notepad++ with the AHK syntax file installed.
+;
+;This file requires AutoHotkey, a highly versatile freeware scripting program.
+;With AutoHotKey installed, an exe can be compiled to run on other computers without
+;   AutoHotKey installed though
 ;
 ; AutoHotkey Version: 104805
 ; Language:       English
@@ -20,7 +23,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 scriptfolder = c:\scripts\startup
 
-run , %scriptfolder%\multipurpose-home.ahk
-run , %scriptfolder%\MinimizeToTrayMenu_minimise.ahk
-run , %scriptfolder%\WorkLogger.ahk
+run , %scriptfolder%\multipurpose-home.ahk  ; << This script found in GITHub repo alongside startup_script.ahk
+run , %scriptfolder%\MinimizeToTrayMenu_minimise.ahk  ; << This script found online
+run , %scriptfolder%\WorkLogger.ahk ; << This script found here https://github.com/staid03/WorkLogger
 exit
