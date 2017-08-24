@@ -15,6 +15,8 @@
 ;     0.6   09-DEC-16   staid03      Removed a bunch of work stuff to make this for home only
 ;     0.7   09-APR-17   staid03      Updated for uploading to GITHub and little cleanup.
 ;                                    This script is purely for my own use.
+;     0.8   24-AUG-17   staid03      Adding comments onto each function
+;                                    - what key-combinations are used to call them
 ;
 ; Script Function:
 ;    Multipurpose script to run in the background for running hotkeys and having shortcut text
@@ -43,7 +45,8 @@ return
  
 ;Printscreens - both alt prtscr and full prtscr
 {
-	;Alt PrintScreen - for capturing a screenshot of the active window
+	;Alt PrintScreen - for capturing a screenshot of only the active window
+	;This key combination is [WIN-KEY] + [ KEY
 	#[::
 	{
 		sleep , 100
@@ -53,6 +56,7 @@ return
 	return
 	
 	;All PrintScreen - for capturing a screenshot of the whole current screen
+	;This key combination is [WIN-KEY] + ] KEY
 	#]::
 	{
 		sleep , 100
@@ -81,7 +85,8 @@ return
 	return
 }
 return 					;not necessary but delineating the end of this section
- 
+
+;;This key combination is [WIN-KEY] + K 
 #k::
 {
 	bookmarkFileLocation = c:
@@ -102,6 +107,7 @@ return 					;not necessary but delineating the end of this section
 return
  
 ;for adding or removing comments - update the commentchars var for comment character(s)
+;;This key combination is [CTRL] + [ALT] + Q
 ^!q::
 {
 	commentchars = --
