@@ -7,3 +7,5 @@ Personalised (but customisable) for 3 functional scripts to run:
 <br>
 <br>
 I have placed startup_script.ahk and the other 3 scripts into C:\Scripts\Startup\ and then created a shortcut to startup_script.ahk and located it in my startup folder for All Users. The script locations are agnostic but a shortcut to startup would have to be placed into a Windows Startup folder (for a particular user or for all users).  
+
+<br><br>location of https://autohotkey.com/docs/scripts/MinimizeToTrayMenu.htm
